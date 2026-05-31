@@ -47,15 +47,6 @@ android {
         }
     }
 
-    splits {
-        abi {
-            isEnable = true
-            reset()
-            include("armeabi-v7a", "arm64-v8a")
-            isUniversalApk = true
-        }
-    }
-
 
     buildTypes {
         getByName("debug") {
@@ -96,6 +87,10 @@ android {
                 "META-INF/LICENSE.txt",
                 "META-INF/NOTICE",
                 "META-INF/NOTICE.txt",
+                "com/knuddels/jtokkit/o200k_base.tiktoken",
+                "com/knuddels/jtokkit/cl100k_base.tiktoken",
+                "com/knuddels/jtokkit/p50k_base.tiktoken",
+                "com/knuddels/jtokkit/r50k_base.tiktoken"
             )
         }
     }
